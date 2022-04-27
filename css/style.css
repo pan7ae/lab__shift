@@ -1,4 +1,29 @@
+.ff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 table {
+  display: block;
+  margin: 1em auto;
+  width: 100%;
   max-width: 1600px;
-  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+table td {
+  border: 1px solid #d9d9d9;
+  padding: 0.5em;
+}
+
+table th {
+  background: #1565C0;
+  color: white;
+  padding: 0.5em;
+  border: 1px solid #1565C0;
+}
+
+.cell, .flex-cell {
+  text-align: center;
 }

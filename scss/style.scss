@@ -1,5 +1,37 @@
+$table-header: #1976D2;
+$table-header-border: #1565C0;
+$table-border: #d9d9d9;
+$row-bg: #f4f2f1;
+$header-bg: #1565C0;
+
+// div{
+// 	box-sizing: border-box;
+// 	width: 1600px;
+// }
+.ff{
+	display: flex;
+}
 table{
+	display: block;
+	margin: 1em auto;
+	width: 100%;
 	max-width: 1600px;
-	// width: 1599px;
-	border: 1px solid #000;
+	border-collapse: collapse;
+
+	td {
+		border: 1px solid $table-border;
+		padding: 0.5em;
+	}
+
+	th {
+		background: $header-bg;
+		color: white;
+		padding: 0.5em;
+		border: 1px solid $table-header-border;
+	}
+}
+
+
+.cell, .flex-cell {
+	text-align: center;
 }
