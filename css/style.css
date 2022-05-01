@@ -1,29 +1,58 @@
-.ff {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 table {
-  display: block;
-  margin: 1em auto;
-  width: 100%;
-  max-width: 1600px;
   border-collapse: collapse;
+  max-width: 1600px;
+  width: 100%;
+  display: table;
 }
 
-table td {
-  border: 1px solid #d9d9d9;
-  padding: 0.5em;
+table td, table th {
+  padding: 15px;
 }
 
 table th {
-  background: #1565C0;
-  color: white;
-  padding: 0.5em;
-  border: 1px solid #1565C0;
+  background-color: #257dd4;
+  border: 1px solid #257dd4;
 }
 
-.cell, .flex-cell {
-  text-align: center;
+table td {
+  border: 1px solid #a9a9a9;
+}
+
+table tr:nth-child(even) td {
+  background-color: #e7e8e8;
+}
+
+table tr:nth-child(odd) td {
+  background-color: #cdcfd2;
+}
+
+table tr th:hover, table tr td:hover {
+  cursor: pointer;
+  background-color: #afda5f;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+table tbody th {
+  display: none;
+}
+
+@media (max-width: 420px) {
+  thead, tbody, tr, td {
+    display: block;
+    text-align: center;
+  }
+  th {
+    display: none;
+  }
+  tbody tr th {
+    display: block;
+  }
+  tbody tr th:before {
+    content: attr(headers);
+  }
 }
