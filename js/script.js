@@ -24,10 +24,9 @@ function returnTable() {
 		currentValue = tableRow[i].getElementsByTagName("td");
 		for (let j = 1; j < currentValue.length; j++) {
 			if (i % 2 == 1)
-				currentValue[j].style.cssText = "td{background-color = #cdcfd2} &:hover{background-color: $table-hover;}";
+				currentValue[j].style.cssText = '';
 			else
-				currentValue[j].style.cssText = "td{background-color = #e7e8e8} &:hover{background-color: $table-hover;}";
+				currentValue[j].style.cssText = '';
 		}
-
 	}
 }
