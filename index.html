@@ -10,65 +10,82 @@
 </head>
 
 <body>
-	<table>
-		<thead>
-			<th id="header">Header 1</th>
-			<th id="header">Header 2</th>
-			<th id="header">Header 3</th>
-			<th id="header">Header 4</th>
-			<th id="header">Header 5</th>
-		</thead>
-		<tbody>
-			<tr>
-				<th class="header" headers="Header 1"></th>
-				<td>111</td>
-				<th class="header" headers="Header 2"></th>
-				<td>111</td>
-				<th class="header" headers="Header 3"></th>
-				<td>111</td>
-				<th class="header" headers="Header 4"></th>
-				<td>111</td>
-				<th class="header" headers="Header 5"></th>
-				<td>111</td>
-			</tr>
-			<tr>
-				<th class="header" headers="Header 1"></th>
-				<td>222</td>
-				<th class="header" headers="Header 2"></th>
-				<td>222</td>
-				<th class="header" headers="Header 3"></th>
-				<td>222</td>
-				<th class="header" headers="Header 4"></th>
-				<td>222</td>
-				<th class="header" headers="Header 5"></th>
-				<td>222</td>
-			</tr>
-			<tr>
-				<th class="header" headers="Header 1"></th>
-				<td>333</td>
-				<th class="header" headers="Header 2"></th>
-				<td>333</td>
-				<th class="header" headers="Header 3"></th>
-				<td>333</td>
-				<th class="header" headers="Header 4"></th>
-				<td>333</td>
-				<th class="header" headers="Header 5"></th>
-				<td>333</td>
-			</tr>
-			<tr>
-				<th class="header" headers="Header 1"></th>
-				<td>444</td>
-				<th class="header" headers="Header 2"></th>
-				<td>444</td>
-				<th class="header" headers="Header 3"></th>
-				<td>444</td>
-				<th class="header" headers="Header 4"></th>
-				<td>444</td>
-				<th class="header" headers="Header 5"></th>
-				<td>444</td>
-			</tr>
-		</tbody>
-	</table>
+	<div class="content">
+		<table>
+			<thead>
+				<tr>
+					<th id="header">Header 1</th>
+					<th id="header">Header 2</th>
+					<th id="header">Header 3</th>
+					<th id="header">Header 4</th>
+					<th id="header">Header 5</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th class="header" headers="Header 1"></th>
+					<td>1</td>
+					<th class="header" headers="Header 2"></th>
+					<td>строка</td>
+					<th class="header" headers="Header 3"></th>
+					<td>9</td>
+					<th class="header" headers="Header 4"></th>
+					<td>13</td>
+					<th class="header" headers="Header 5"></th>
+					<td>17</td>
+				</tr>
+				<tr>
+					<th class="header" headers="Header 1"></th>
+					<td>2</td>
+					<th class="header" headers="Header 2"></th>
+					<td>СтРочка</td>
+					<th class="header" headers="Header 3"></th>
+					<td>10</td>
+					<th class="header" headers="Header 4"></th>
+					<td>14</td>
+					<th class="header" headers="Header 5"></th>
+					<td>18</td>
+				</tr>
+				<tr>
+					<th class="header" headers="Header 1"></th>
+					<td>3</td>
+					<th class="header" headers="Header 2"></th>
+					<td>стройКа</td>
+					<th class="header" headers="Header 3"></th>
+					<td>11</td>
+					<th class="header" headers="Header 4"></th>
+					<td>15</td>
+					<th class="header" headers="Header 5"></th>
+					<td>19</td>
+				</tr>
+				<tr>
+					<th class="header" headers="Header 1"></th>
+					<td>4</td>
+					<th class="header" headers="Header 2"></th>
+					<td>СТОЛ</td>
+					<th class="header" headers="Header 3"></th>
+					<td>12</td>
+					<th class="header" headers="Header 4"></th>
+					<td>16</td>
+					<th class="header" headers="Header 5"></th>
+					<td>20</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- JS Task -->
+		<div class="search">
+			<div id="results"></div>
+			<div class="filter">
+				<input type="text" name="" id="textSearch" placeholder="Введите текст">
+				<input type="button" value="Поиск" onclick="search()">
+			</div>
+
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+
+
 </body>
 
 </html>

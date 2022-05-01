@@ -2,6 +2,69 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search {
+  max-width: 800px;
+  display: inline-block;
+  margin-top: 1.2em;
+  height: 4em;
+}
+
+.filter {
+  margin-top: 0.7em;
+}
+
+.filter input[type=text] {
+  margin-right: 20px;
+}
+
+#results {
+  color: red;
+}
+
+input[type=text] {
+  border-radius: 0.5em;
+  border: 2px solid #257dd4;
+  font-size: 18px;
+  background-color: #e7e8e8;
+  padding-left: 5px;
+}
+
+input[type=text]:focus {
+  background-color: #e0e8f0;
+}
+
+input[type=button] {
+  border: 2px solid #257dd4;
+  border-radius: 0.6em;
+  cursor: pointer;
+  color: #257dd4;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  font-size: 18px;
+}
+
+input[type=button]:hover {
+  -webkit-box-shadow: 0 0 40px 40px #257dd4 inset;
+          box-shadow: 0 0 40px 40px #257dd4 inset;
+  color: #fff;
+  outline: 0;
+}
+
 table {
   border-collapse: collapse;
   max-width: 1600px;
@@ -54,5 +117,8 @@ table tbody th {
   }
   tbody tr th:before {
     content: attr(headers);
+  }
+  .filter input[type=text] {
+    margin-bottom: 0.7em;
   }
 }
